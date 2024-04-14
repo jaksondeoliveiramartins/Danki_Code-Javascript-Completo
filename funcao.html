@@ -1,0 +1,64 @@
+<html>
+    <script>
+        // Criando uma função que interaja  com o objeto
+        function Pessoa(){
+            // pode serem chamadas de atributos ou variaveis
+            this.nome = "samuel";
+            this.printNome = function(numero){
+                alert(numero);
+            };
+
+            
+            this.returnFilho = function(filho){
+                return filho;
+        //Como passar um objeto  como parametro da função:Conclusão: A gente pega o "pessoa" que instanciou e chama a  função,  em seguida passa o parametro no caso (filho)  "returnFilho(filho)"  e retorna a ele mesmo.Sendo assim chama-se este metodo "alert( pessoa.returnFilho(filho).nome);"
+                
+            }
+            
+
+        }
+
+        /*function Filho(nome,idade){
+            //validar informações
+            
+            /*if(nome == undefined){
+                nome = "analuiza";
+            }
+            if(idade == undefined){
+                idade = 10;
+            
+            }
+            this.nome = nome;
+            this.idade = idade;
+
+            
+        }
+
+        filho = new Filho("Samuel", '10 anos');*/
+        function Filho(){
+            this.nome  = "Analuiza";
+            this.idade = 11 ;
+            this.peso = 36;
+        }
+        //instanciando um objeto
+        var pessoa = new Pessoa(); // criando um novo objeto
+        var filho = new Filho();
+        /*filho.nome = "Samuel"; */
+        /*filho.peso = "36kg" ;*/
+
+        alert(pessoa.returnFilho(filho).nome);
+        /*alert(pessoa.returnFilho(filho).idade);
+        alert(pessoa.returnFilho(filho).peso);*/
+
+        
+
+        
+
+
+        
+
+
+
+
+    </script>
+</html>
