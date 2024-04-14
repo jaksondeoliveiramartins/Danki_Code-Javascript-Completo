@@ -5,7 +5,11 @@
      var filho = new Filho();
  
 
-Em seguida passa o parametro no caso (filho)  "returnFilho(filho)"  e retorna a ele mesmo. Sendo assim chama-se este metodo teremos acesso ao proprio Objeto (filho).
+Em seguida passa o parametro no caso (filho)  "returnFilho(filho)"  e retorna a ele mesmo. Sendo assim chama-se de método. Teremos acesso ao proprio Objeto (filho).
+
+    this.returnFilho = function(filho){
+        return filho;
+    }
     
     alert(pessoa.returnFilho(filho).nome);
 # Classes:
